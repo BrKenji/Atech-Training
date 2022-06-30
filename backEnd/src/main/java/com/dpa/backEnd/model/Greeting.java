@@ -7,7 +7,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.DateTimeFormat.ISO;
 
-@Document
+@Document(collection="greeting")
 public class Greeting{
 	
 	public Greeting(String _id, String greeting, String name, LocalDateTime dateTime) {
